@@ -18,7 +18,9 @@ Basta dar **duplo clique** em qualquer um dos arquivos `.html` para abrir no nav
 - `galeria.html` – Galeria com Grid e Flexbox
 - `menu.html` – Menu hamburguer responsivo
 
-O arquivo `styles.css` está vinculado ao `index.html`, mas pode ser reutilizado em outras páginas.
+O arquivo `styles.css` está vinculado ao `index.html`
+O arquivo `styles2.css` está vinculado ao `galeria.html`
+O arquivo `styles3.css` está vinculado ao `menu.html`
 
 ---
 
