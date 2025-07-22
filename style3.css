@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #d0e3db;
+  }
+  
+  header.topo {
+    background-color: #1c5f6c;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 600px) {
+    .nav {
+      display: none;
+      flex-direction: column;
+      background-color: #444;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+    }
+  
+    .nav a {
+      padding: 15px;
+      border-top: 1px solid #555;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    #menu-toggle:checked + .hamburger + .nav {
+      display: flex;
+    }
+  }
